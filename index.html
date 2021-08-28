@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="styles/style.css"/>
+        <title>Calculator</title>
+    </head>
+    <body>
+        <form name="calc" class="form">
+            <input type="text" class="value" name="txt" readonly="">
+            <span class="num clear" onclick="Clear();">C</span>
+            <span class="num" onclick="value('/');">/</span>
+            <span class="num" onclick="value('*');">*</span>
+            <span class="num" onclick="value('7');">7</span>
+            <span class="num" onclick="value('8');">8</span>
+            <span class="num" onclick="value('9');">9</span>
+            <span class="num" onclick="value('-');">-</span>
+            <span class="num" onclick="value('4');">4</span>
+            <span class="num" onclick="value('5');">5</span>
+            <span class="num" onclick="value('6');">6</span>
+            <span class="num plus" onclick="value('+');">+</span>
+            <span class="num" onclick="value('1');">1</span>
+            <span class="num" onclick="value('2');">2</span>
+            <span class="num" onclick="value('3');">3</span>
+            <span class="num" onclick="value('0');">0</span>
+            <span class="num" onclick="value('00')">00</span>
+            <span class="num" onclick="value('.')">.</span>
+            <span class="num" onclick="equals();">=</span>
+        </form> 
+        <script>
+            function value(num) {
+document.calc.txt.value += num;
+}
+function equals() {
+document.calc.txt.value = eval(calc.txt.value);
+}
+function Clear() {
+document.calc.txt.value = '';
+}
+        </script>
+    </body>
+</html>

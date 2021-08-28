@@ -1,0 +1,56 @@
+* {
+				margin:0;
+				padding:0;
+}
+
+body {
+				display: flex;
+				justify-content: center;
+				align-items:  center;
+				min-height: 100vh;
+				background: #192d36;
+}
+
+.form {
+				position:relative;
+				display: grid;
+				
+				
+}
+
+.value {
+				height: 50px;
+				grid-column:span 4;
+				outline: none;
+				padding: 10px;
+				text-align: right;
+				border: 4px solid #0099cc;
+				font-size:1.7em;
+}
+
+span {	
+				display:grid;
+				width:60px;
+				background: #272727;
+				color:#fff;
+				place-items:center;
+				padding:20px;
+				border:.2px solid #73abcd;
+				font-weight: 700;
+				font-size: 2em;
+}
+
+span:active {
+				background :#73abcd;
+				font-weight: bold;
+}
+.clear {
+				grid-column: span 2;
+				width:160px;
+}
+
+
+.plus {
+				grid-row: span 2;
+				height:120px;
+}
